@@ -1,0 +1,38 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Object_oriented",
+      "request": "launch",
+      "mainClass": "Object_oriented",
+      "projectName": "Maximum-Product-of-Three-Numbers_68562ef1"
+    },
+    {
+      "type": "java",
+      "name": "Main",
+      "request": "launch",
+      "mainClass": "Main",
+      "projectName": "Maximum-Product-of-Three-Numbers_68562ef1"
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": "c:/Users/Krystal Bacalso/Documents/000_GitHub/Maximum-Product-of-Three-Numbers",
+      "program": "c:/Users/Krystal Bacalso/Documents/000_GitHub/Maximum-Product-of-Three-Numbers/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}
