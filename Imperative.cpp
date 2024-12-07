@@ -39,9 +39,23 @@ int maximumProduct(std::vector<int>& nums) {
 }
 
 int main() {
-    // Example usage
-    std::vector<int> nums = {1, 10, -5, 1, -100};
-    
+    size_t n;  // Use size_t for the number of elements
+
+    std::cout << "Enter the number of elements: ";
+    std::cin >> n;
+
+    if (n == 0) {
+        std::cerr << "The number of elements must be greater than zero!" << std::endl;
+        return 1; // Exit with an error code
+    }
+
+    std::vector<int> nums(n);
+
+    std::cout << "Enter the elements: ";
+    for (size_t i = 0; i < n; ++i) {
+        std::cin >> nums[i];
+    }
+
     // Calculate and display the result
     int result = maximumProduct(nums);
     std::cout << "Maximum product is: " << result << std::endl;
