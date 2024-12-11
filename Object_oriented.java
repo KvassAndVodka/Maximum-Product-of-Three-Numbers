@@ -48,6 +48,7 @@ public class Object_oriented {
     public static void main(String[] args) {
         // Input handling
         Scanner scanner = new Scanner(System.in);
+        System.out.println("Object Oriented Paradigm (Java)");
         System.out.print("Enter the size of the array:");
         int size = scanner.nextInt();
         int[] nums = new int[size];

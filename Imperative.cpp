@@ -3,8 +3,10 @@
 #include <climits> // For INT_MIN and INT_MAX
 #include <algorithm> // For max function
 
+using namespace std;
+
 // Function to calculate the maximum product of three numbers
-int maximumProduct(std::vector<int>& nums) {
+int maximumProduct(vector<int>& nums) {
     int min1 = INT_MAX, min2 = INT_MAX;
     int max1 = INT_MIN, max2 = INT_MIN, max3 = INT_MIN;
 
@@ -35,30 +37,31 @@ int maximumProduct(std::vector<int>& nums) {
         }
     }
 
-    return std::max(max1 * max2 * max3, max1 * min1 * min2);
+    return max(max1 * max2 * max3, max1 * min1 * min2);
 }
 
 int main() {
     size_t n;  // Use size_t for the number of elements
 
-    std::cout << "Enter the number of elements: ";
-    std::cin >> n;
+    cout << "Imperative Paradigm (C++)" << endl;
+    cout << "Enter the number of elements: ";
+    cin >> n;
 
     if (n == 0) {
-        std::cerr << "The number of elements must be greater than zero!" << std::endl;
+        cerr << "The number of elements must be greater than zero!" << endl;
         return 1; // Exit with an error code
     }
 
-    std::vector<int> nums(n);
+    vector<int> nums(n);
 
-    std::cout << "Enter the elements: ";
+    cout << "Enter the elements: ";
     for (size_t i = 0; i < n; ++i) {
-        std::cin >> nums[i];
+        cin >> nums[i];
     }
 
     // Calculate and display the result
     int result = maximumProduct(nums);
-    std::cout << "Maximum product is: " << result << std::endl;
+    cout << "Maximum product is: " << result << endl;
 
     return 0;
 }
