@@ -31,6 +31,8 @@
 
 (defun main ()
   (let ((nums '(1 10 -5 1 -100)))
+    (format t "Functional Paradigm (Common Lisp)~%")
+    (format t "Input Elements: ~A~%" nums)
     (format t "Maximum product: ~A~%" (maximum-product nums))))
 
 (main)
